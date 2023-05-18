@@ -10,13 +10,13 @@ function Colour(props) {
   function test(num) {
     const newCols = cols.slice();
     var newIndex;
-    if (newCols[num] + 1 == 2 && selected == -1) {
+    if (newCols[num] + 1 === 2 && selected === -1) {
       setSelected(num);
     }
-    if (selected == num) {
+    if (selected === num) {
       newIndex = (newCols[num] + 1) % 3;
       setSelected(-1);
-    } else if (selected != -1) {
+    } else if (selected !== -1) {
       newIndex = (newCols[num] + 1) % 2;
     } else {
       newIndex = (newCols[num] + 1) % 3;

@@ -1,15 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Colour from "./Colour.js";
+import Main from "./Main";
+
 
 function App() {
   return (
-    <div className="App">
-      <Colour colour={"#58b3da"} />
-      <Colour colour={"#febc12"} />
-      <Colour colour={"#7f66ad"} />
+    <div>
+      {/* <Navbar /> */}
+      <Main />
     </div>
   );
 }
 
-export default App;
+export default App
